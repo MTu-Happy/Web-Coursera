@@ -6,6 +6,21 @@ body{
     background:#f2f2f2;
 }
 
+/* Skip link */
+.skip-link{
+    position:absolute;
+    left:-999px;
+    top:10px;
+    background:#000;
+    color:#fff;
+    padding:10px;
+    text-decoration:none;
+}
+
+.skip-link:focus{
+    left:10px;
+}
+
 /* Header */
 header{
     background:#2c3e50;
@@ -16,6 +31,8 @@ header{
 nav{
     background:#3498db;
     padding:10px;
+    display:inline-block;
+    width:80%;
 }
 
 /* Navigation list */
@@ -25,15 +42,23 @@ nav ul{
     padding:0;
 }
 
+/*
 li{
     display:inline-block;
     width:120px;
 }
+*/
 
 nav a{
     color:white;
     text-decoration:none;
     font-weight:bold;
+    margin-right:20px;
+}
+
+/* Images inside navigation */
+nav img{
+    width:10%;
 }
 
 /* Heading */
@@ -54,6 +79,27 @@ main{
 /* Paragraph */
 p{
     line-height:1.8;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:40% 40%;
+    justify-content:space-around;
+    align-items:start;
+    row-gap:20px;
+}
+
+/* Images inside grid */
+.grid img{
+    width:100%;
+}
+
+/* Flex */
+.flex{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
 }
 
 /* Footer */
