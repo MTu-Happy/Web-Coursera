@@ -1,39 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
+<a href="#main-content" class="skip-link">Skip to Main Content</a>
+
 <header>
-    <h1>About Us</h1>
+
+<h1>About Us</h1>
+
 </header>
 
 <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
-    </ul>
+
+<ul class="menu">
+
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html" class="active">About</a></li>
+<li><a href="raw.html">Contact</a></li>
+
+</ul>
+
 </nav>
 
-<main>
-    <h2>About</h2>
+<main id="main-content">
 
-    <p>
-        This page introduces our website.
-    </p>
+<h2>Gallery</h2>
 
-    <p>
-        It uses the same stylesheet as the other pages.
-    </p>
+<div class="grid">
+
+<div class="box">
+<img src="https://picsum.photos/400/250?1" alt="Nature">
+</div>
+
+<div class="box">
+<img src="https://picsum.photos/400/250?2" alt="Lake">
+</div>
+
+<div class="box">
+<img src="https://picsum.photos/400/250?3" alt="Mountain">
+</div>
+
+<div class="box">
+<img src="https://picsum.photos/400/250?4" alt="Forest">
+</div>
+
+</div>
+
 </main>
 
 <footer>
-    <p>© 2026 My Website</p>
+
+<p>© 2026 My Website</p>
+
 </footer>
 
 </body>
