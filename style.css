@@ -142,6 +142,22 @@ footer{
 }
 
 /* ===== Responsive ===== */
+.preview{
+    width:100%;
+    height:350px;
+    margin-bottom:25px;
+    border:2px solid #3498db;
+    border-radius:10px;
+    background:#ddd;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:24px;
+    color:#fff;
+    text-shadow:1px 1px 4px #000;
+}
 
 @media(max-width:768px){
 
@@ -165,22 +181,5 @@ flex-direction:column;
 
 align-items:center;
 
-}
-    
-.preview{
-    width:100%;
-    height:350px;
-    margin-bottom:25px;
-    border:2px solid #3498db;
-    border-radius:10px;
-    background:#ddd;
-    background-size:cover;
-    background-position:center;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-size:24px;
-    color:#fff;
-    text-shadow:1px 1px 4px #000;
 }
 }
