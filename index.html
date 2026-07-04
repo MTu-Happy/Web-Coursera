@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="addTabFocus()">
 
 <a href="#main-content" class="skip-link">Skip to Main Content</a>
 
@@ -25,35 +25,84 @@
 
 <main id="main-content">
 
-<h2>Welcome</h2>
+    <h2>Welcome</h2>
 
-<p>
-This website demonstrates semantic HTML, accessibility,
-Flexbox, Grid Layout and CSS styling.
-</p>
+    <p>
+        This website demonstrates semantic HTML, accessibility,
+        Flexbox, Grid Layout and CSS styling.
+    </p>
 
-<div class="card">
+    <div class="card">
+        <h3>Features</h3>
 
-<h3>Features</h3>
+        <ul>
+            <li>Accessible Navigation</li>
+            <li>Skip Link</li>
+            <li>Responsive Design</li>
+            <li>CSS Grid</li>
+            <li>Flexbox</li>
+        </ul>
+    </div>
 
-<ul>
-<li>Accessible navigation</li>
-<li>Skip Link</li>
-<li>Responsive Design</li>
-<li>CSS Grid</li>
-<li>Flexbox</li>
+    <h2>Photo Gallery</h2>
 
-</ul>
+    <div id="image" class="preview">
+        Hover over or tab to an image below.
+    </div>
 
-</div>
+    <div class="grid">
+
+        <img src="https://picsum.photos/id/1015/400/300"
+             alt="Mountain Landscape"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="https://picsum.photos/id/1025/400/300"
+             alt="Cute Dog"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="https://picsum.photos/id/1035/400/300"
+             alt="Forest"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="https://picsum.photos/id/1043/400/300"
+             alt="Blue Ocean"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="https://picsum.photos/id/1050/400/300"
+             alt="Beautiful River"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+        <img src="https://picsum.photos/id/1069/400/300"
+             alt="Sunset View"
+             onmouseover="upDate(this)"
+             onmouseleave="unDo()"
+             onfocus="upDate(this)"
+             onblur="unDo()">
+
+    </div>
 
 </main>
 
 <footer>
-
-<p>© 2026 My Website</p>
-
+    <p>© 2026 My Website</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
