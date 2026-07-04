@@ -60,7 +60,7 @@ nav{
 
 .menu a:hover,
 .menu a:focus,
-.active{
+.menu a.active{
     background:white;
     color:#3498db;
 }
